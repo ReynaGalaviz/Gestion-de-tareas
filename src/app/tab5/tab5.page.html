@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      <p style="text-align: center;">CRUD PRODUCTOS</p>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>CLAVE:</ion-col>
+          <ion-col><input type="text" [(ngModel)]="clave" (ngModelChange)="buscar()"/></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>NOMBRE:</ion-col>
+          <ion-col><input type="text" [(ngModel)]="nombre"/></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>PRECIO:</ion-col>
+          <ion-col><input type="number" [(ngModel)]="precio"/></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col><ion-button expand="block" size="small" (click)="limpiar()">limpiar</ion-button></ion-col>
+          <ion-col><ion-button expand="block" size="small" (click)="guardar()">guardar</ion-button></ion-col>
+          <ion-col><ion-button expand="block" size="small" (click)="borrar()">borrar</ion-button></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+    
+  </ion-card>
+  <ion-grid>
+    <ion-row style="background-color: cornflowerblue; color:black; font-size: small;" >
+      <ion-col>CLAVE</ion-col><ion-col>NOMBRE</ion-col><ion-col>PRECIO</ion-col>
+    </ion-row>
+
+    <ion-row *ngFor="let pro of productos" style="font-size: small;">
+      <ion-col>{{pro.Pro_Cve}}</ion-col>
+      <ion-col>{{pro.Pro_Nombre}}</ion-col>
+      <ion-col>{{pro.Pro_Precio}}</ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

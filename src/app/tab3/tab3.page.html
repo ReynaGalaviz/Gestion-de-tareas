@@ -1,0 +1,26 @@
+<ion-header>
+<ion-toolbar color="primary">
+    <ion-buttons slot="start">
+        <ion-button color="light">
+            <ion-icon slot="icon-only" name="calendar"></ion-icon>
+        </ion-button>
+    </ion-buttons>
+    <ion-title>
+    {{currentMonth}}
+    </ion-title>
+</ion-toolbar>
+</ion-header>
+<ion-content>
+    
+<calendar id="myCalendar"
+  locale="es"
+  calendarMode="month" 
+  startHour="6"
+  endHour="20"
+  step="31"
+  startingDayWeek="1" 
+  [currentDate]="currentDate"
+  (onTitleChanged)="onViewTitleChanged($event)">
+</calendar>
+
+</ion-content>

@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+     Tareas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item-sliding>
+    <ion-item>
+      <ion-label>Tarea1</ion-label>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">No terminada</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+  <ion-item class="item-divider">
+    Terminadas
+</ion-item>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Tarea2</ion-label>
+        <ion-item>
+  <ion-label>Asignada</ion-label>
+  <ion-datetime displayFormat="DDDD MMM D, YYYY" min="2005" max="2020" value="2008-09-02"></ion-datetime>
+</ion-item>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="read(item)">Terminada</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+
+ <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button>
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+  <ion-label>Añadir tarea</ion-label>
+</ion-fab-list>
+</ion-fab>
+
+
+</ion-content>

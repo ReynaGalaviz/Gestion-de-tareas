@@ -1,0 +1,7 @@
+{
+  "name": "ProyectoTabs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

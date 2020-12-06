@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Ajustes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-item lines="full">
+      <ion-label>
+        <h2>Seguridad</h2>
+      </ion-label>
+      <ion-icon name="lock-closed-sharp" slot="start"></ion-icon>
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label>
+        <h2>Tema</h2>
+      </ion-label>
+      <ion-icon name="color-palette-sharp" slot="start"></ion-icon>
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item lines="full">
+    <ion-label>
+      <h2>Accesibilidad</h2>
+    </ion-label>
+    <ion-icon name="body-sharp" slot="start"></ion-icon>
+    <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+  </ion-item>
+
+  <ion-item lines="full">
+  <ion-label>
+    <h2>Comentarios</h2>
+  </ion-label>
+  <ion-icon name="mail-open-sharp" slot="start"></ion-icon>
+  <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+</ion-item>
+
+    <ion-item lines="full">
+      <ion-label>
+        <h2>Información</h2>
+      </ion-label>
+      <ion-icon name="information-circle-sharp" slot="start"></ion-icon>
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label>
+        <h2>Ayuda</h2>
+      </ion-label>
+      <ion-icon name="help-circle-sharp" slot="start"></ion-icon>
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-button slot="end" (click)="cerrar()">
+        CERRAR SESIÓN
+        <ion-icon name="close-circle-sharp" slot="end"></ion-icon>
+      </ion-button>
+      
+    </ion-item>
+
+  </ion-grid>
+ 
+</ion-content>

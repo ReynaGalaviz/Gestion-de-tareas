@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="secundary">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-grid >
+    <ion-row>
+      <ion-col style="text-align: center;">
+        INICIO DE SESIÓN
+      </ion-col>
+    </ion-row>
+
+    <ion-col >
+      <ion-img src="https://leymusgenomics.com/wp-content/uploads/2019/08/login-logo.png" style="height: 30vh; width: auto; margin: auto; display: block;"></ion-img>
+    </ion-col>
+
+      <ion-row>
+        <ion-col style="text-align: center;">
+          USUARIO:
+        </ion-col >
+          <ion-col style="text-align: center;">
+            <input type="text" [(ngModel)]="usuario" />
+          </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col style="text-align: center;">
+          CONTRASEÑA:
+        </ion-col>
+          <ion-col style="text-align: center;">
+            <input type="text" [(ngModel)]="pass" />
+          </ion-col>
+        </ion-row>
+
+          <ion-row>
+            <ion-col style="text-align: center;">
+              <ion-button expand="full" (click)="validaUsuario()">Acceder</ion-button>
+            </ion-col>
+          </ion-row>
+    </ion-grid>
+    <p style="text-align: center; color: red;">{{mensaje}}</p>
+</ion-content>
